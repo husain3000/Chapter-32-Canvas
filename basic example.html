@@ -1,0 +1,13 @@
+<!-- <canvas id="myCanvas">
+ Cannot display graphic. Canvas is not supported by your browser (IE<9)
+</canvas> -->
+<canvas id="myCanvas"></canvas>
+
+<script>
+var ctx = document.getElementById("myCanvas").getContext("2d");
+// now we can refer to the canvas's 2D layer context using `ctx`
+ctx.fillStyle = "red";
+ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height); // x, y, width, height
+ctx.fillStyle = "yellow";
+ctx.fillText("My red canvas with some black text", 24, 32); // text, x, y
+</script>
